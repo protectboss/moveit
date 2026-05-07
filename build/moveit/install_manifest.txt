@@ -1,0 +1,15 @@
+/home/sunrise/ws_moveit/install/moveit/share/ament_index/resource_index/package_run_dependencies/moveit
+/home/sunrise/ws_moveit/install/moveit/share/ament_index/resource_index/parent_prefix_path/moveit
+/home/sunrise/ws_moveit/install/moveit/share/moveit/environment/ament_prefix_path.sh
+/home/sunrise/ws_moveit/install/moveit/share/moveit/environment/ament_prefix_path.dsv
+/home/sunrise/ws_moveit/install/moveit/share/moveit/environment/path.sh
+/home/sunrise/ws_moveit/install/moveit/share/moveit/environment/path.dsv
+/home/sunrise/ws_moveit/install/moveit/share/moveit/local_setup.bash
+/home/sunrise/ws_moveit/install/moveit/share/moveit/local_setup.sh
+/home/sunrise/ws_moveit/install/moveit/share/moveit/local_setup.zsh
+/home/sunrise/ws_moveit/install/moveit/share/moveit/local_setup.dsv
+/home/sunrise/ws_moveit/install/moveit/share/moveit/package.dsv
+/home/sunrise/ws_moveit/install/moveit/share/ament_index/resource_index/packages/moveit
+/home/sunrise/ws_moveit/install/moveit/share/moveit/cmake/moveitConfig.cmake
+/home/sunrise/ws_moveit/install/moveit/share/moveit/cmake/moveitConfig-version.cmake
+/home/sunrise/ws_moveit/install/moveit/share/moveit/package.xml
