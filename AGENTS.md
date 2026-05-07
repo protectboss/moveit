@@ -4,61 +4,75 @@
 
 ### Product Overview
 
-This is a **MoveIt 2** robotics motion planning workspace for ROS 2. It contains the full MoveIt 2 source stack (moveit2, moveit2_tutorials, moveit_task_constructor, moveit_visual_tools, moveit_resources, etc.) organized as a standard colcon workspace under `src/`.
+This is a **MoveIt 2** (v2.5.9) robotics motion planning workspace for **ROS 2 Humble**. It contains the full MoveIt 2 source stack organized as a standard colcon workspace under `src/`.
 
-### Important: ROS 2 Distro Mismatch
+### Docker-based Development (Required)
 
-The source code in `src/` is written for **ROS 2 Humble** (MoveIt 2 v2.5.9), but the Cloud VM runs **Ubuntu 24.04 Noble** which only supports **ROS 2 Jazzy**. Key consequences:
+The Cloud VM runs Ubuntu 24.04 Noble, but this codebase targets **ROS 2 Humble** (Ubuntu 22.04 Jammy). All building, testing, and running must be done inside the Docker container.
 
-- **C++ tutorial code** (e.g., `src/moveit2_tutorials/`) will not compile against Jazzy due to API changes (`trajectory_` → `trajectory`, `error_code_` → `error_code`, `computeCartesianPath` signature changes).
-- **MoveIt 2 core** from source also has minor Jazzy incompatibilities (missing `ament_target_dependencies` for `pluginlib` in some sub-packages).
-- **Binary Jazzy packages** (`ros-jazzy-moveit*`) are installed and fully functional. Use these for running demos and testing.
-- Resource/config packages (`moveit_resources_*_description`, `srdfdom`, `moveit_visual_tools`, `rosparam_shortcuts`, `launch_param_builder`, `moveit_configs_utils`) **do build** from source against Jazzy.
-
-### Compiler Gotcha
-
-The VM's default `c++` is symlinked to `clang++`, which cannot find `libstdc++`. The update script reconfigures `c++` → `g++` via `update-alternatives`. If you see linker errors about `-lstdc++`, verify `c++ --version` shows `g++`, not `clang++`.
-
-### Running MoveIt 2
+#### Build the Docker image (first time only)
 
 ```bash
-source /opt/ros/jazzy/setup.bash
-
-# Launch Panda demo (headless, no RViz)
-ros2 launch moveit_resources_panda_moveit_config demo.launch.py use_rviz:=false
-
-# Launch with RViz (requires display)
-ros2 launch moveit_resources_panda_moveit_config demo.launch.py
-```
-
-### Building from source
-
-```bash
-source /opt/ros/jazzy/setup.bash
+sudo dockerd &>/tmp/dockerd.log &
+sleep 3
 cd /workspace
-
-# Build only the compatible packages (resources, configs, utilities)
-colcon build --packages-select \
-  launch_param_builder moveit_common moveit_configs_utils \
-  srdfdom moveit_visual_tools rosparam_shortcuts \
-  --cmake-args -DCMAKE_BUILD_TYPE=Release \
-  -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_C_COMPILER=/usr/bin/gcc
+sudo docker build -f .devcontainer/Dockerfile -t moveit2-humble-dev .
 ```
 
-### Running tests
+#### Build the workspace from source
 
 ```bash
-source /opt/ros/jazzy/setup.bash
-source /workspace/install/setup.bash   # if workspace was built
-colcon test --packages-select <package_name>
-colcon test-result --all
+sudo docker run --rm \
+  -v /workspace/src:/ws_moveit/src \
+  -v /tmp/moveit_build:/ws_moveit/build \
+  -v /tmp/moveit_install:/ws_moveit/install \
+  -v /tmp/moveit_log:/ws_moveit/log \
+  moveit2-humble-dev bash -c \
+  "source /opt/ros/humble/setup.bash && cd /ws_moveit && \
+   colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON \
+   --event-handlers console_direct+"
 ```
 
-### Lint
+#### Run tests
 
 ```bash
-source /opt/ros/jazzy/setup.bash
-ament_lint_cmake <CMakeLists.txt>
-ament_copyright <package_dir>/
-ament_xmllint <package.xml>
+sudo docker run --rm \
+  -v /workspace/src:/ws_moveit/src \
+  -v /tmp/moveit_build:/ws_moveit/build \
+  -v /tmp/moveit_install:/ws_moveit/install \
+  -v /tmp/moveit_log:/ws_moveit/log \
+  moveit2-humble-dev bash -c \
+  "source /opt/ros/humble/setup.bash && source /ws_moveit/install/setup.bash && \
+   cd /ws_moveit && colcon test && colcon test-result --all"
 ```
+
+#### Launch MoveIt2 Panda demo
+
+```bash
+# Start container in background
+sudo docker run -d --network host \
+  -v /workspace/src:/ws_moveit/src \
+  -v /tmp/moveit_build:/ws_moveit/build \
+  -v /tmp/moveit_install:/ws_moveit/install \
+  --name moveit-demo moveit2-humble-dev bash -c \
+  "source /opt/ros/humble/setup.bash && source /ws_moveit/install/setup.bash && \
+   ros2 launch moveit_resources_panda_moveit_config demo.launch.py use_rviz:=false"
+
+# Check logs
+sudo docker logs moveit-demo
+
+# Execute commands inside running container
+sudo docker exec moveit-demo bash -c \
+  'source /opt/ros/humble/setup.bash && source /ws_moveit/install/setup.bash && ros2 topic list'
+
+# Stop
+sudo docker stop moveit-demo && sudo docker rm moveit-demo
+```
+
+### Key Gotchas
+
+- **Docker required**: The dockerd daemon must be started before any Docker operations: `sudo dockerd &>/tmp/dockerd.log &`
+- **Build volumes**: Build artifacts are stored in `/tmp/moveit_build` and `/tmp/moveit_install` on the host, mounted into the container. These persist across container runs but not across VM restarts.
+- **Network mode**: Use `--network host` when running demos so ROS 2 DDS discovery works between containers and any host-side tools.
+- **Source mounts**: The workspace source at `/workspace/src` is bind-mounted into the container at `/ws_moveit/src`, so code changes on the host are immediately reflected in the container.
+- **56 packages**: The full workspace contains 56 colcon packages, all of which build successfully against ROS 2 Humble.
