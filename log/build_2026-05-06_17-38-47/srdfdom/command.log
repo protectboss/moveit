@@ -1,0 +1,6 @@
+Invoking command in '/home/sunrise/ws_moveit/build/srdfdom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sunrise/ws_moveit/src/srdfdom -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/srdfdom
+Invoked command in '/home/sunrise/ws_moveit/build/srdfdom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sunrise/ws_moveit/src/srdfdom -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/srdfdom
+Invoking command in '/home/sunrise/ws_moveit/build/srdfdom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sunrise/ws_moveit/build/srdfdom -- -j6 -l6
+Invoked command in '/home/sunrise/ws_moveit/build/srdfdom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sunrise/ws_moveit/build/srdfdom -- -j6 -l6
+Invoking command in '/home/sunrise/ws_moveit/build/srdfdom': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sunrise/ws_moveit/build/srdfdom
+Invoked command in '/home/sunrise/ws_moveit/build/srdfdom' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sunrise/ws_moveit/build/srdfdom

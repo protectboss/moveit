@@ -1,0 +1,47 @@
+[2.228s] Invoking command in '/home/sunrise/ws_moveit/src/launch_param_builder': PYTHONPATH=/home/sunrise/ws_moveit/build/launch_param_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_param_builder build --build-base /home/sunrise/ws_moveit/build/launch_param_builder/build install --record /home/sunrise/ws_moveit/build/launch_param_builder/install.log --single-version-externally-managed install_data
+[2.520s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.520s]   warnings.warn(msg)
+[2.831s] running egg_info
+[2.863s] creating ../../build/launch_param_builder/launch_param_builder.egg-info
+[2.863s] writing ../../build/launch_param_builder/launch_param_builder.egg-info/PKG-INFO
+[2.864s] writing dependency_links to ../../build/launch_param_builder/launch_param_builder.egg-info/dependency_links.txt
+[2.865s] writing requirements to ../../build/launch_param_builder/launch_param_builder.egg-info/requires.txt
+[2.865s] writing top-level names to ../../build/launch_param_builder/launch_param_builder.egg-info/top_level.txt
+[2.866s] writing manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[2.963s] reading manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[2.964s] adding license file 'LICENSE'
+[2.969s] writing manifest file '../../build/launch_param_builder/launch_param_builder.egg-info/SOURCES.txt'
+[2.970s] running build
+[2.970s] running build_py
+[2.971s] creating /home/sunrise/ws_moveit/build/launch_param_builder/build/lib/launch_param_builder
+[2.972s] copying launch_param_builder/launch_param_builder.py -> /home/sunrise/ws_moveit/build/launch_param_builder/build/lib/launch_param_builder
+[2.973s] copying launch_param_builder/__init__.py -> /home/sunrise/ws_moveit/build/launch_param_builder/build/lib/launch_param_builder
+[2.974s] copying launch_param_builder/utils.py -> /home/sunrise/ws_moveit/build/launch_param_builder/build/lib/launch_param_builder
+[2.975s] running install
+[2.983s] running install_lib
+[3.018s] creating /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.019s] copying /home/sunrise/ws_moveit/build/launch_param_builder/build/lib/launch_param_builder/launch_param_builder.py -> /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.019s] copying /home/sunrise/ws_moveit/build/launch_param_builder/build/lib/launch_param_builder/__init__.py -> /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.020s] copying /home/sunrise/ws_moveit/build/launch_param_builder/build/lib/launch_param_builder/utils.py -> /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder
+[3.021s] byte-compiling /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/launch_param_builder.py to launch_param_builder.cpython-310.pyc
+[3.022s] byte-compiling /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/__init__.py to __init__.cpython-310.pyc
+[3.023s] byte-compiling /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder/utils.py to utils.cpython-310.pyc
+[3.024s] running install_data
+[3.025s] creating /home/sunrise/ws_moveit/install/launch_param_builder/share/ament_index/resource_index/packages
+[3.025s] copying resource/launch_param_builder -> /home/sunrise/ws_moveit/install/launch_param_builder/share/ament_index/resource_index/packages
+[3.026s] creating /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/launch
+[3.026s] copying example/launch_param_builder_example.launch.py -> /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/launch
+[3.027s] creating /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/config
+[3.027s] copying test/data/parameter_file -> /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/config
+[3.028s] copying test/data/parameters_injection.yaml -> /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/config
+[3.028s] copying test/data/parameters.yaml -> /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/config
+[3.028s] copying test/data/parameter.xacro -> /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/config
+[3.028s] copying test/data/param_file_to_inject.yaml -> /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder/config
+[3.029s] copying package.xml -> /home/sunrise/ws_moveit/install/launch_param_builder/share/launch_param_builder
+[3.029s] creating /home/sunrise/ws_moveit/install/launch_param_builder/lib/launch_param_builder
+[3.030s] copying example/example_node.py -> /home/sunrise/ws_moveit/install/launch_param_builder/lib/launch_param_builder
+[3.030s] running install_egg_info
+[3.065s] Copying ../../build/launch_param_builder/launch_param_builder.egg-info to /home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages/launch_param_builder-0.1.1-py3.10.egg-info
+[3.067s] running install_scripts
+[3.138s] writing list of installed files to '/home/sunrise/ws_moveit/build/launch_param_builder/install.log'
+[3.242s] Invoked command in '/home/sunrise/ws_moveit/src/launch_param_builder' returned '0': PYTHONPATH=/home/sunrise/ws_moveit/build/launch_param_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_param_builder build --build-base /home/sunrise/ws_moveit/build/launch_param_builder/build install --record /home/sunrise/ws_moveit/build/launch_param_builder/install.log --single-version-externally-managed install_data

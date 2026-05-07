@@ -1,0 +1,204 @@
+[0.051s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/moveit_configs_utils:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/home/sunrise/ws_moveit/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning/lib:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/moveit_configs_utils/lib/python3.10/site-packages:/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/sunrise/ws_moveit/src/moveit2/moveit_kinematics -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/moveit_kinematics
+[0.132s] -- The C compiler identification is GNU 11.4.0
+[0.210s] -- The CXX compiler identification is GNU 11.4.0
+[0.224s] -- Detecting C compiler ABI info
+[0.337s] -- Detecting C compiler ABI info - done
+[0.350s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.350s] -- Detecting C compile features
+[0.350s] -- Detecting C compile features - done
+[0.352s] -- Detecting CXX compiler ABI info
+[0.466s] -- Detecting CXX compiler ABI info - done
+[0.488s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.488s] -- Detecting CXX compile features
+[0.489s] -- Detecting CXX compile features - done
+[0.495s] -- Found moveit_common: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_common/share/moveit_common/cmake)
+[0.500s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.233s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.544s] -- Found tf2_kdl: 0.25.15 (/opt/ros/humble/share/tf2_kdl/cmake)
+[1.612s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.630s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.645s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.666s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.691s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.765s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.768s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.768s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.896s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.902s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.030s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.062s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.125s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.142s] -- Looking for pthread.h
+[2.305s] -- Looking for pthread.h - found
+[2.306s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.459s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.459s] -- Found Threads: TRUE  
+[2.637s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[2.646s] -- Found random_numbers: 2.0.1 (/opt/ros/humble/share/random_numbers/cmake)
+[2.662s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[2.681s] -- Found moveit_core: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_core/share/moveit_core/cmake)
+[2.731s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.792s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.818s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.861s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.011s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[3.320s] -- Found moveit_ros_planning: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+[3.329s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.377s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options system 
+[3.452s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.456s] -- Found ros_testing: 0.4.0 (/opt/ros/humble/share/ros_testing/cmake)
+[3.462s] -- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[3.469s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.527s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.532s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.532s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.533s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.533s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.582s] -- Found PythonExtra: .so  
+[3.585s] -- Found moveit_resources_fanuc_description: 2.0.7 (/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description/share/moveit_resources_fanuc_description/cmake)
+[3.589s] -- Found moveit_resources_fanuc_moveit_config: 2.0.7 (/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config/share/moveit_resources_fanuc_moveit_config/cmake)
+[3.591s] -- Found moveit_resources_panda_description: 2.0.7 (/home/sunrise/ws_moveit/install/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake)
+[3.594s] -- Found moveit_resources_panda_moveit_config: 2.0.7 (/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config/share/moveit_resources_panda_moveit_config/cmake)
+[3.599s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.625s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.645s] -- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[3.646s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.695s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.695s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.695s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.732s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.733s] -- Configured cppcheck include dirs: /home/sunrise/ws_moveit/src/moveit2/moveit_kinematics/kdl_kinematics_plugin/include;/home/sunrise/ws_moveit/src/moveit2/moveit_kinematics/lma_kinematics_plugin/include;/home/sunrise/ws_moveit/src/moveit2/moveit_kinematics/srv_kinematics_plugin/include;/home/sunrise/ws_moveit/src/moveit2/moveit_kinematics/cached_ik_kinematics_plugin/include
+[3.734s] -- Configured cppcheck exclude dirs and/or files: 
+[3.738s] -- Added test 'lint_cmake' to check CMake code style
+[3.743s] -- Configuring done
+[3.985s] -- Generating done
+[4.047s] -- Build files have been written to: /home/sunrise/ws_moveit/build/moveit_kinematics
+[4.087s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/moveit_configs_utils:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/home/sunrise/ws_moveit/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning/lib:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/moveit_configs_utils/lib/python3.10/site-packages:/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/sunrise/ws_moveit/src/moveit2/moveit_kinematics -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/moveit_kinematics
+[4.088s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/moveit_configs_utils:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/home/sunrise/ws_moveit/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning/lib:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/moveit_configs_utils/lib/python3.10/site-packages:/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sunrise/ws_moveit/build/moveit_kinematics -- -j6 -l6
+[4.167s] [  5%] [32mBuilding CXX object cached_ik_kinematics_plugin/CMakeFiles/moveit_cached_ik_kinematics_base.dir/src/ik_cache.cpp.o[0m
+[22.121s] [ 10%] [32m[1mLinking CXX shared library libmoveit_cached_ik_kinematics_base.so[0m
+[22.485s] [ 10%] Built target moveit_cached_ik_kinematics_base
+[22.555s] [ 15%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[38.137s] [ 21%] [32m[1mLinking CXX static library libgtest.a[0m
+[38.228s] [ 21%] Built target gtest
+[38.279s] [ 26%] [32mBuilding CXX object test/CMakeFiles/benchmark_ik.dir/benchmark_ik.cpp.o[0m
+[56.843s] [ 31%] [32m[1mLinking CXX executable benchmark_ik[0m
+[57.368s] [ 31%] Built target benchmark_ik
+[57.394s] [ 36%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[59.094s] [ 42%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[59.175s] [ 42%] Built target gtest_main
+[59.243s] [ 47%] [32mBuilding CXX object lma_kinematics_plugin/CMakeFiles/moveit_lma_kinematics_plugin.dir/src/lma_kinematics_plugin.cpp.o[0m
+[74.320s] [ 52%] [32m[1mLinking CXX shared library libmoveit_lma_kinematics_plugin.so[0m
+[74.652s] [ 52%] Built target moveit_lma_kinematics_plugin
+[74.682s] [ 57%] [32mBuilding CXX object kdl_kinematics_plugin/CMakeFiles/moveit_kdl_kinematics_plugin.dir/src/kdl_kinematics_plugin.cpp.o[0m
+[92.774s] [ 63%] [32mBuilding CXX object kdl_kinematics_plugin/CMakeFiles/moveit_kdl_kinematics_plugin.dir/src/chainiksolver_vel_mimic_svd.cpp.o[0m
+[108.289s] [ 68%] [32m[1mLinking CXX shared library libmoveit_kdl_kinematics_plugin.so[0m
+[108.658s] [ 68%] Built target moveit_kdl_kinematics_plugin
+[108.688s] [ 73%] [32mBuilding CXX object srv_kinematics_plugin/CMakeFiles/moveit_srv_kinematics_plugin.dir/src/srv_kinematics_plugin.cpp.o[0m
+[124.702s] [ 78%] [32m[1mLinking CXX shared library libmoveit_srv_kinematics_plugin.so[0m
+[125.023s] [ 78%] Built target moveit_srv_kinematics_plugin
+[125.051s] [ 84%] [32mBuilding CXX object test/CMakeFiles/test_kinematics_plugin.dir/test_kinematics_plugin.cpp.o[0m
+[163.016s] [ 89%] [32m[1mLinking CXX executable test_kinematics_plugin[0m
+[163.654s] [ 89%] Built target test_kinematics_plugin
+[163.680s] [ 94%] [32mBuilding CXX object cached_ik_kinematics_plugin/CMakeFiles/moveit_cached_ik_kinematics_plugin.dir/src/cached_ik_kinematics_plugin.cpp.o[0m
+[177.834s] [100%] [32m[1mLinking CXX shared library libmoveit_cached_ik_kinematics_plugin.so[0m
+[178.159s] [100%] Built target moveit_cached_ik_kinematics_plugin
+[178.172s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/moveit_configs_utils:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/home/sunrise/ws_moveit/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning/lib:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/moveit_configs_utils/lib/python3.10/site-packages:/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sunrise/ws_moveit/build/moveit_kinematics -- -j6 -l6
+[178.175s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_kinematics': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/moveit_configs_utils:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/home/sunrise/ws_moveit/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning/lib:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/moveit_configs_utils/lib/python3.10/site-packages:/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sunrise/ws_moveit/build/moveit_kinematics
+[178.184s] -- Install configuration: "Release"
+[178.184s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/kdl_kinematics_plugin_description.xml
+[178.184s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/lma_kinematics_plugin_description.xml
+[178.185s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/srv_kinematics_plugin_description.xml
+[178.185s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cached_ik_kinematics_plugin_description.xml
+[178.186s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include
+[178.186s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit
+[178.186s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin
+[178.186s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/cached_ik_kinematics_plugin.h
+[178.186s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail
+[178.186s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/NearestNeighborsGNAT.h
+[178.187s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/NearestNeighbors.h
+[178.187s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/detail/GreedyKCenters.h
+[178.187s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/cached_ik_kinematics_plugin/cached_ik_kinematics_plugin-inl.h
+[178.187s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch
+[178.187s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/measure_ik_call_cost.launch
+[178.188s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/moveit_kinematics/auto_create_ikfast_moveit_plugin.sh
+[178.188s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/moveit_kinematics/create_ikfast_moveit_plugin.py
+[178.188s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/moveit_kinematics/round_collada_numbers.py
+[178.189s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates
+[178.189s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/ikfast61_moveit_plugin_template.cpp
+[178.189s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/ikfast.h
+[178.189s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/ikfast_kinematics_plugin/templates/CMakeLists.txt
+[178.190s] -- Up-to-date: /home/sunrise/ws_moveit/install/moveit_kinematics/include
+[178.190s] -- Up-to-date: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit
+[178.190s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin
+[178.190s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/kdl_kinematics_plugin.h
+[178.190s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/joint_mimic.hpp
+[178.190s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/kdl_kinematics_plugin/chainiksolver_vel_mimic_svd.hpp
+[178.191s] -- Up-to-date: /home/sunrise/ws_moveit/install/moveit_kinematics/include
+[178.191s] -- Up-to-date: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit
+[178.191s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/lma_kinematics_plugin
+[178.191s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/lma_kinematics_plugin/lma_kinematics_plugin.h
+[178.192s] -- Up-to-date: /home/sunrise/ws_moveit/install/moveit_kinematics/include
+[178.192s] -- Up-to-date: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit
+[178.192s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/srv_kinematics_plugin
+[178.192s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/include/moveit/srv_kinematics_plugin/srv_kinematics_plugin.h
+[178.192s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config
+[178.193s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-lma-test.yaml
+[178.193s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/panda-kdl-test.yaml
+[178.193s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-kdl-singular-test.yaml
+[178.193s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-kdl-test.yaml
+[178.194s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/fanuc-lma-singular-test.yaml
+[178.194s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/panda-lma-singular-test.yaml
+[178.194s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/panda-lma-test.yaml
+[178.194s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/config/panda-kdl-singular-test.yaml
+[178.194s] -- Up-to-date: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch
+[178.194s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/panda-kdl-singular.test.py
+[178.195s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-lma.test.py
+[178.195s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/panda-lma-singular.test.py
+[178.195s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-kdl-singular.test.py
+[178.195s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-kdl.test.py
+[178.195s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/fanuc-lma-singular.test.py
+[178.195s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/panda-lma.test.py
+[178.195s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/launch/panda-kdl.test.py
+[178.196s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/moveit_kinematics/benchmark_ik
+[178.196s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_kinematics/lib/moveit_kinematics/benchmark_ik" to ""
+[178.196s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/moveit_kinematics/test_kinematics_plugin
+[178.199s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_kinematics/lib/moveit_kinematics/test_kinematics_plugin" to ""
+[178.199s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so.2.5.9
+[178.200s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so.2.5.9" to ""
+[178.200s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_base.so
+[178.200s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so.2.5.9
+[178.200s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so.2.5.9" to ""
+[178.201s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_cached_ik_kinematics_plugin.so
+[178.201s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_kdl_kinematics_plugin.so
+[178.202s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_kdl_kinematics_plugin.so" to ""
+[178.202s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so.2.5.9
+[178.204s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so.2.5.9" to ""
+[178.204s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_lma_kinematics_plugin.so
+[178.204s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so.2.5.9
+[178.204s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so.2.5.9" to ""
+[178.205s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/lib/libmoveit_srv_kinematics_plugin.so
+[178.205s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/environment/library_path.sh
+[178.205s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/environment/library_path.dsv
+[178.205s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/ament_index/resource_index/package_run_dependencies/moveit_kinematics
+[178.205s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/ament_index/resource_index/parent_prefix_path/moveit_kinematics
+[178.206s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/environment/ament_prefix_path.sh
+[178.206s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/environment/ament_prefix_path.dsv
+[178.206s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/environment/path.sh
+[178.206s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/environment/path.dsv
+[178.207s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/local_setup.bash
+[178.207s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/local_setup.sh
+[178.207s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/local_setup.zsh
+[178.207s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/local_setup.dsv
+[178.207s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/package.dsv
+[178.208s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/ament_index/resource_index/packages/moveit_kinematics
+[178.208s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_kinematics
+[178.208s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cmake/export_moveit_kinematicsExport.cmake
+[178.209s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cmake/export_moveit_kinematicsExport-release.cmake
+[178.209s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cmake/ConfigExtras.cmake
+[178.209s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cmake/ament_cmake_export_targets-extras.cmake
+[178.209s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cmake/ament_cmake_export_dependencies-extras.cmake
+[178.210s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cmake/moveit_kinematicsConfig.cmake
+[178.210s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/cmake/moveit_kinematicsConfig-version.cmake
+[178.210s] -- Installing: /home/sunrise/ws_moveit/install/moveit_kinematics/share/moveit_kinematics/package.xml
+[178.213s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_kinematics' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/moveit_configs_utils:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/home/sunrise/ws_moveit/install/launch_param_builder:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_resources_fanuc_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_ros_planning/lib:/home/sunrise/ws_moveit/install/moveit_ros_occupancy_map_monitor/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/moveit_configs_utils/lib/python3.10/site-packages:/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:/home/sunrise/ws_moveit/install/launch_param_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sunrise/ws_moveit/build/moveit_kinematics

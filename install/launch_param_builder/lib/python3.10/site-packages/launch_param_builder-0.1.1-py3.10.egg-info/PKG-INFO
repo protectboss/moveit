@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: launch_param_builder
+Version: 0.1.1
+Summary: Python library for loading parameters in launch files
+Maintainer: Jafar Abdi
+Maintainer-email: jafar@picknik.ai
+License: BSD
+License-File: LICENSE
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: license-file
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

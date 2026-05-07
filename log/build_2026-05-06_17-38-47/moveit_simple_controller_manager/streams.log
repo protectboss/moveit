@@ -1,0 +1,89 @@
+[0.034s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_simple_controller_manager': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/sunrise/ws_moveit/src/moveit2/moveit_plugins/moveit_simple_controller_manager -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager
+[0.106s] -- The C compiler identification is GNU 11.4.0
+[0.187s] -- The CXX compiler identification is GNU 11.4.0
+[0.197s] -- Detecting C compiler ABI info
+[0.303s] -- Detecting C compiler ABI info - done
+[0.306s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.306s] -- Detecting C compile features
+[0.307s] -- Detecting C compile features - done
+[0.311s] -- Detecting CXX compiler ABI info
+[0.421s] -- Detecting CXX compiler ABI info - done
+[0.428s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.428s] -- Detecting CXX compile features
+[0.428s] -- Detecting CXX compile features - done
+[0.428s] -- Found moveit_common: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_common/share/moveit_common/cmake)
+[0.431s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.115s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.390s] -- Found moveit_core: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_core/share/moveit_core/cmake)
+[1.709s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.777s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.830s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.837s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.849s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.869s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.894s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.960s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.964s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.072s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.100s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.148s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.160s] -- Found Threads: TRUE  
+[2.250s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.284s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.401s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[2.499s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.499s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.836s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[2.877s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[2.888s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.911s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.912s] -- Configured cppcheck include dirs: /home/sunrise/ws_moveit/src/moveit2/moveit_plugins/moveit_simple_controller_manager/include
+[2.912s] -- Configured cppcheck exclude dirs and/or files: 
+[2.914s] -- Added test 'lint_cmake' to check CMake code style
+[2.916s] -- Added test 'xmllint' to check XML markup files
+[2.919s] -- Configuring done
+[2.965s] -- Generating done
+[2.978s] -- Build files have been written to: /home/sunrise/ws_moveit/build/moveit_simple_controller_manager
+[3.000s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_simple_controller_manager' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/sunrise/ws_moveit/src/moveit2/moveit_plugins/moveit_simple_controller_manager -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager
+[3.001s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_simple_controller_manager': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sunrise/ws_moveit/build/moveit_simple_controller_manager -- -j6 -l6
+[3.078s] [ 33%] [32mBuilding CXX object CMakeFiles/moveit_simple_controller_manager.dir/src/moveit_simple_controller_manager.cpp.o[0m
+[18.260s] [ 66%] [32mBuilding CXX object CMakeFiles/moveit_simple_controller_manager.dir/src/follow_joint_trajectory_controller_handle.cpp.o[0m
+[29.527s] [100%] [32m[1mLinking CXX shared library libmoveit_simple_controller_manager.so[0m
+[29.934s] [100%] Built target moveit_simple_controller_manager
+[29.948s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_simple_controller_manager' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sunrise/ws_moveit/build/moveit_simple_controller_manager -- -j6 -l6
+[29.951s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_simple_controller_manager': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sunrise/ws_moveit/build/moveit_simple_controller_manager
+[29.962s] -- Install configuration: "Release"
+[29.962s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib/libmoveit_simple_controller_manager.so.2.5.9
+[29.969s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib/libmoveit_simple_controller_manager.so.2.5.9" to ""
+[29.970s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib/libmoveit_simple_controller_manager.so
+[29.971s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/include
+[29.972s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/include/moveit_simple_controller_manager
+[29.972s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/include/moveit_simple_controller_manager/action_based_controller_handle.h
+[29.975s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/include/moveit_simple_controller_manager/empty_controller_handle.h
+[29.977s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/include/moveit_simple_controller_manager/follow_joint_trajectory_controller_handle.h
+[29.979s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/include/moveit_simple_controller_manager/gripper_controller_handle.h
+[29.982s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/environment/library_path.sh
+[29.983s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/environment/library_path.dsv
+[29.983s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/moveit_simple_controller_manager_plugin_description.xml
+[29.984s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/ament_index/resource_index/package_run_dependencies/moveit_simple_controller_manager
+[29.985s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/ament_index/resource_index/parent_prefix_path/moveit_simple_controller_manager
+[29.985s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/environment/ament_prefix_path.sh
+[29.985s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/environment/ament_prefix_path.dsv
+[29.985s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/environment/path.sh
+[29.985s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/environment/path.dsv
+[29.986s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/local_setup.bash
+[29.986s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/local_setup.sh
+[29.986s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/local_setup.zsh
+[29.986s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/local_setup.dsv
+[29.986s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/package.dsv
+[29.986s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/ament_index/resource_index/packages/moveit_simple_controller_manager
+[29.990s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_simple_controller_manager
+[29.990s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake/export_moveit_simple_controller_managerExport.cmake
+[29.990s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake/export_moveit_simple_controller_managerExport-release.cmake
+[29.990s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake/ConfigExtras.cmake
+[29.990s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake/ament_cmake_export_targets-extras.cmake
+[29.991s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.991s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake/moveit_simple_controller_managerConfig.cmake
+[29.991s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake/moveit_simple_controller_managerConfig-version.cmake
+[29.991s] -- Installing: /home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/package.xml
+[29.999s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_simple_controller_manager' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sunrise/ws_moveit/build/moveit_simple_controller_manager

@@ -1,0 +1,117 @@
+[0.031s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_ros_control_interface': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/sunrise/ws_moveit/src/moveit2/moveit_plugins/moveit_ros_control_interface -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/moveit_ros_control_interface
+[0.164s] -- The C compiler identification is GNU 11.4.0
+[0.288s] -- The CXX compiler identification is GNU 11.4.0
+[0.299s] -- Detecting C compiler ABI info
+[0.469s] -- Detecting C compiler ABI info - done
+[0.485s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.486s] -- Detecting C compile features
+[0.488s] -- Detecting C compile features - done
+[0.495s] -- Detecting CXX compiler ABI info
+[0.626s] -- Detecting CXX compiler ABI info - done
+[0.638s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.639s] -- Detecting CXX compile features
+[0.639s] -- Detecting CXX compile features - done
+[0.646s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.549s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.769s] -- Found rclcpp_action: 16.0.14 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.835s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.843s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.859s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.881s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.908s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.037s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.041s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.171s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.203s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.251s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.266s] -- Looking for pthread.h
+[2.401s] -- Looking for pthread.h - found
+[2.401s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.519s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.520s] -- Found Threads: TRUE  
+[2.633s] -- Found controller_manager_msgs: 2.53.1 (/opt/ros/humble/share/controller_manager_msgs/cmake)
+[2.673s] -- Found moveit_core: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_core/share/moveit_core/cmake)
+[2.730s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.801s] -- Found parameter_traits: 0.7.1 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.824s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.847s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.026s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[3.132s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.132s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.455s] -- Found moveit_simple_controller_manager: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/share/moveit_simple_controller_manager/cmake)
+[3.462s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[3.522s] -- Found moveit_common: 2.5.9 (/home/sunrise/ws_moveit/install/moveit_common/share/moveit_common/cmake)
+[3.678s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system thread 
+[3.714s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.718s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.753s] -- Configuring done
+[3.954s] -- Generating done
+[4.019s] -- Build files have been written to: /home/sunrise/ws_moveit/build/moveit_ros_control_interface
+[4.069s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_ros_control_interface' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/sunrise/ws_moveit/src/moveit2/moveit_plugins/moveit_ros_control_interface -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/sunrise/ws_moveit/install/moveit_ros_control_interface
+[4.070s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_ros_control_interface': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sunrise/ws_moveit/build/moveit_ros_control_interface -- -j6 -l6
+[4.184s] [  7%] [32mBuilding CXX object CMakeFiles/moveit_ros_control_interface_plugin.dir/src/controller_manager_plugin.cpp.o[0m
+[29.242s] [ 14%] [32m[1mLinking CXX shared library libmoveit_ros_control_interface_plugin.so[0m
+[29.640s] [ 14%] Built target moveit_ros_control_interface_plugin
+[29.664s] [ 21%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[43.709s] [ 28%] [32m[1mLinking CXX static library libgtest.a[0m
+[43.759s] [ 28%] Built target gtest
+[43.784s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[45.252s] [ 42%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[45.287s] [ 42%] Built target gtest_main
+[45.311s] [ 50%] [32mBuilding CXX object CMakeFiles/moveit_ros_control_interface_empty_plugin.dir/src/empty_controller_plugin.cpp.o[0m
+[50.470s] [ 57%] [32m[1mLinking CXX shared library libmoveit_ros_control_interface_empty_plugin.so[0m
+[50.804s] [ 57%] Built target moveit_ros_control_interface_empty_plugin
+[50.830s] [ 64%] [32mBuilding CXX object test/CMakeFiles/test_controller_manager_plugin.dir/test_controller_manager_plugin.cpp.o[0m
+[75.032s] [ 71%] [32m[1mLinking CXX executable test_controller_manager_plugin[0m
+[75.403s] [ 71%] Built target test_controller_manager_plugin
+[75.428s] [ 78%] [32mBuilding CXX object CMakeFiles/moveit_ros_control_interface_gripper_plugin.dir/src/gripper_controller_plugin.cpp.o[0m
+[85.202s] [ 85%] [32m[1mLinking CXX shared library libmoveit_ros_control_interface_gripper_plugin.so[0m
+[85.506s] [ 85%] Built target moveit_ros_control_interface_gripper_plugin
+[85.533s] [ 92%] [32mBuilding CXX object CMakeFiles/moveit_ros_control_interface_trajectory_plugin.dir/src/joint_trajectory_controller_plugin.cpp.o[0m
+[95.225s] [100%] [32m[1mLinking CXX shared library libmoveit_ros_control_interface_trajectory_plugin.so[0m
+[95.520s] [100%] Built target moveit_ros_control_interface_trajectory_plugin
+[95.533s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_ros_control_interface' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/sunrise/ws_moveit/build/moveit_ros_control_interface -- -j6 -l6
+[95.536s] Invoking command in '/home/sunrise/ws_moveit/build/moveit_ros_control_interface': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sunrise/ws_moveit/build/moveit_ros_control_interface
+[95.546s] -- Install configuration: "Release"
+[95.547s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_plugin.so.2.5.9
+[95.548s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_plugin.so.2.5.9" to ""
+[95.548s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_plugin.so
+[95.549s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_trajectory_plugin.so.2.5.9
+[95.550s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_trajectory_plugin.so.2.5.9" to ""
+[95.550s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_trajectory_plugin.so
+[95.550s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_gripper_plugin.so.2.5.9
+[95.551s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_gripper_plugin.so.2.5.9" to ""
+[95.551s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_gripper_plugin.so
+[95.551s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_empty_plugin.so.2.5.9
+[95.551s] -- Set runtime path of "/home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_empty_plugin.so.2.5.9" to ""
+[95.552s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/lib/libmoveit_ros_control_interface_empty_plugin.so
+[95.552s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/include
+[95.552s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/include/moveit_ros_control_interface
+[95.552s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/include/moveit_ros_control_interface/ControllerHandle.h
+[95.553s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/moveit_core_plugins.xml
+[95.553s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/moveit_ros_control_interface_plugins.xml
+[95.553s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/environment/library_path.sh
+[95.553s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/environment/library_path.dsv
+[95.554s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/ament_index/resource_index/package_run_dependencies/moveit_ros_control_interface
+[95.554s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/ament_index/resource_index/parent_prefix_path/moveit_ros_control_interface
+[95.555s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/environment/ament_prefix_path.sh
+[95.555s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/environment/ament_prefix_path.dsv
+[95.555s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/environment/path.sh
+[95.555s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/environment/path.dsv
+[95.556s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/local_setup.bash
+[95.556s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/local_setup.sh
+[95.556s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/local_setup.zsh
+[95.557s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/local_setup.dsv
+[95.557s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/package.dsv
+[95.557s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/ament_index/resource_index/packages/moveit_ros_control_interface
+[95.557s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/ament_index/resource_index/moveit_core__pluginlib__plugin/moveit_ros_control_interface
+[95.558s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/ament_index/resource_index/moveit_ros_control_interface__pluginlib__plugin/moveit_ros_control_interface
+[95.558s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/cmake/export_moveit_ros_control_interfaceExport.cmake
+[95.558s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/cmake/export_moveit_ros_control_interfaceExport-release.cmake
+[95.559s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/cmake/ConfigExtras.cmake
+[95.559s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/cmake/ament_cmake_export_targets-extras.cmake
+[95.559s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[95.559s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/cmake/moveit_ros_control_interfaceConfig.cmake
+[95.560s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/cmake/moveit_ros_control_interfaceConfig-version.cmake
+[95.560s] -- Installing: /home/sunrise/ws_moveit/install/moveit_ros_control_interface/share/moveit_ros_control_interface/package.xml
+[95.563s] Invoked command in '/home/sunrise/ws_moveit/build/moveit_ros_control_interface' returned '0': AMENT_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager:/home/sunrise/ws_moveit/install/moveit_core:/home/sunrise/ws_moveit/install/moveit_resources_panda_moveit_config:/home/sunrise/ws_moveit/install/srdfdom:/home/sunrise/ws_moveit/install/moveit_resources_pr2_description:/home/sunrise/ws_moveit/install/moveit_resources_panda_description:/home/sunrise/ws_moveit/install/moveit_common:/opt/ros/humble LD_LIBRARY_PATH=/home/sunrise/ws_moveit/install/moveit_simple_controller_manager/lib:/home/sunrise/ws_moveit/install/moveit_core/lib:/home/sunrise/ws_moveit/install/srdfdom/lib:${LD_LIBRARY_PATH} PATH=/home/sunrise/ws_moveit/install/moveit_core/bin:${PATH} PYTHONPATH=/home/sunrise/ws_moveit/install/srdfdom/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/sunrise/ws_moveit/build/moveit_ros_control_interface
